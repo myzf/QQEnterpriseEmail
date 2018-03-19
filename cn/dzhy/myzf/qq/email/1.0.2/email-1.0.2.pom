@@ -33,7 +33,26 @@
 
   <build>
     <finalName>email</finalName>
-
+      <resources>
+          <resource>
+              <directory>src/main/java</directory>
+              <includes>
+                  <include>**/*.xml</include>
+                  <include>**/*.properties</include>
+                  <include>**/*.pem</include>
+                  <include>**/*.p12</include>
+                  <include>**/*.pfx</include>
+                  <include>**/*.jks</include>
+              </includes>
+          </resource>
+          <resource>
+              <directory>src/main/resources</directory>
+              <includes>
+                  <include>**/*.xml</include>
+                  <include>**/*.properties</include>
+              </includes>
+          </resource>
+      </resources>
           <plugins>
 
               <plugin>
